@@ -1,0 +1,87 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "Who We Are";
+}
+
+<!DOCTYPE html>
+<style>
+
+    body{
+        padding: 2.2em;
+        background-image: radial-gradient(black, grey, white);
+        background-repeat: repeat-y;
+        color: black;
+    }
+    .title {
+        font-size: 50px;
+        text-align: center;
+        font-family: Britannic;
+        color: #868484;
+        
+    }
+
+    .titleBox{
+        background-repeat: repeat;
+        height: 660px;
+        width: 100%;
+        margin-top: 45px;
+        background-color: #e1dada;
+        border-radius: 25px;
+    }
+
+    .bioBox{
+        margin-left: 2em;
+        margin-right: 2em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: #bab8b8;
+        text-align: left;
+        border-radius: 25px;
+    }
+
+    .bioParagraph{
+        color: black;
+        font-size: 18px;
+    }
+</style>
+
+<!--Header of About Page-->
+<div class="titleBox">
+    <h2 class="title">@ViewData["Title"]</h2>
+    <h3 class="model" style="text-align: center; color: grey;">@Model.Message</h3>
+    <div class="bioBox">
+        <p class="bioParagraph">
+            Snatched up from the crypts of Burly, J U I C E B O X got its start from a spree of 
+            informal jam sessions embellished with rhymes; a goofy mix of jazz, rock, and rap, a 
+            sound not found on the radio.  As the groove came through and the rhymes flipped dimes, 
+            a stoner's dream began to materialize into an aspiring musician's abstract reality.  We're
+            going over the fuckin' bridge to Terabithia dawg!                        
+        </p>
+
+        <p class="bioParagraph">
+            J U I C E B O X hit the streets in December of 2018, debuting demos of original slices 
+            on the streets of Burlington, Vermont.  The original line up consisted of emcees Jacob "Zesty"
+            Hartman and Kevin Slafsky, bassist Michael Dunham, keyboardist "Yosemite" Sam Atallah, and drummer
+            Julian Lathrop.  Shortly after, the band introduced alto saxophonist Tim Foley and tenor saxophonist
+            /emcee Thaya Zalewski, completing the dynamic 7-piece groove machine.
+        </p>
+
+        <p class="bioParagraph">
+            Despite an abundance of underground talent in the Burlington music scene, J U I C E B O X managed
+            to stand out immediately, drawing in large numbers to cramped basements and assembling crowds 
+            as substantial as the most seasoned Burly bands.  They stapled their posters to the boards,
+            and only the squares and clowns were dodging this small city's biggest upcoming
+            entertainers.  
+        </p>
+
+        <p>
+
+        </p>
+
+    </div>
+</div>
+
+
