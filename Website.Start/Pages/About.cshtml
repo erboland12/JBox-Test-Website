@@ -6,37 +6,50 @@
 
 <!DOCTYPE html>
 <style>
-
-    body{
+    body {
         padding: 2.2em;
-        background-image: radial-gradient(black, grey, white);
-        background-repeat: repeat-y;
-        color: black;
+        background-image: url('../wwwroot/images/banner1.svg');
+        background-position: center center;
+
     }
     .title {
         font-size: 50px;
         text-align: center;
         font-family: Britannic;
-        color: #868484;
-        
+        color: #868484;        
     }
 
     .titleBox{
         background-repeat: repeat;
-        height: 660px;
+        height: 1260px;
         width: 100%;
         margin-top: 45px;
+        background-image: radial-gradient(grey, white);
         background-color: #e1dada;
         border-radius: 25px;
     }
 
-    .bioBox{
+    .profileMain {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 72%;
+        padding: 12px;
+        border: 2px groove black;
+    }
+
+    .profileMainFig {
+        padding-top: 6px;
+    }
+
+    .bioBox {
         margin-left: 2em;
         margin-right: 2em;
         padding-top: .5em;
         padding-bottom: .5em;
         padding-left: 1em;
         padding-right: 1em;
+        background-image: radial-gradient(grey, white);
         background-color: #bab8b8;
         text-align: left;
         border-radius: 25px;
@@ -45,42 +58,93 @@
     .bioParagraph{
         color: black;
         font-size: 18px;
+        text-wrap: avoid;
     }
+
+    .profileOne{
+        width: 425px;
+        height: 370px;
+        
+    }
+    .profileOneBox {
+        float: left;
+        padding: 0.3em;
+    }
+
 </style>
 
 <!--Header of About Page-->
 <div class="titleBox">
-    <h2 class="title">@ViewData["Title"]</h2>
+    <figure class="profileMainFig">
+        <img class="profileMain" src="~/images/juicemain.jpg" alt="Main Picture of Juicebox" />
+    </figure>
+
+
     <h3 class="model" style="text-align: center; color: grey;">@Model.Message</h3>
     <div class="bioBox">
         <p class="bioParagraph">
-            Snatched up from the crypts of Burly, J U I C E B O X got its start from a spree of 
-            informal jam sessions embellished with rhymes; a goofy mix of jazz, rock, and rap, a 
-            sound not found on the radio.  As the groove came through and the rhymes flipped dimes, 
+            Snatched up from the crypts of Burly, J U I C E B O X got its start from a spree of
+            informal jam sessions embellished with rhymes; a goofy mix of jazz, rock, and rap, a
+            sound not found on the radio.  As the groove came through and the rhymes flipped dimes,
             a stoner's dream began to materialize into an aspiring musician's abstract reality.  We're
-            going over the fuckin' bridge to Terabithia dawg!                        
+            going over the fuckin' bridge to Terabithia dawg!
         </p>
 
         <p class="bioParagraph">
-            J U I C E B O X hit the streets in December of 2018, debuting demos of original slices 
+            J U I C E B O X hit the streets in December of 2018, debuting demos of original slices
             on the streets of Burlington, Vermont.  The original line up consisted of emcees Jacob "Zesty"
             Hartman and Kevin Slafsky, bassist Michael Dunham, keyboardist "Yosemite" Sam Atallah, and drummer
-            Julian Lathrop.  Shortly after, the band introduced alto saxophonist Tim Foley and tenor saxophonist
-            /emcee Thaya Zalewski, completing the dynamic 7-piece groove machine.
+            Julian Lathrop.  Shortly after, the band introduced alto saxophonist Tim Foley and tenor saxophonist/emcee
+            Thaya Zalewski, completing the dynamic 7-piece groove machine.
         </p>
 
         <p class="bioParagraph">
             Despite an abundance of underground talent in the Burlington music scene, J U I C E B O X managed
-            to stand out immediately, drawing in large numbers to cramped basements and assembling crowds 
+            to stand out immediately, drawing in large numbers to cramped basements and assembling crowds
             as substantial as the most seasoned Burly bands.  They stapled their posters to the boards,
             and only the squares and clowns were dodging this small city's biggest upcoming
-            entertainers.  
+            entertainers.
+        </p>
+        <div class="profileOneBox">
+            <figure>
+                <img class="profileOne" src="~/images/juiceone.jpg" alt="Test" />
+                <figcaption>L to R: Slafsky, Zalewski, Foley, Hartman, Atallah, Lathrop, Dunham</figcaption>                
+            </figure>
+        </div>
+        <p class="bioParagraph">
+            What makes this band so memorable, you may ask?  Their concept in itself was appealing; a jazz-based
+            instrumental section (with hints of rock influence) that set the scene for hard-hitting, yet soulful,
+            bars.  In a haypile of punk-inspired indie lovers that dominate the local music scene, J U I C E B O X
+            is one of the few needles.  Whether you learn to love them or hate them, they are objectively a unique breed
+            far different from their contemporaries.  What really glued this band together, however, was the internal
+            workings of the members. An understanding -- a sense of respect between one another that can only be understood
+            by the band-mates alone.  The dynamic of the emcees' style construct melodically memorable choruses
+            and mind-bending verses.  The knowledge and experience of the rhythm section serves as the backbone of the
+            operation, permitting classic instrumented samples blended with timeless techniques practiced by the greatest
+            jazz musicians. The raw power of the horn section instills an instrinsic sense of motivation to get your lazy
+            ass to the front of the crowd and start dancing like nobody's watching.  Each member holds an invaluable
+            responsibility to forming the Voltron of Funk that is J U I C E B O X.
         </p>
 
-        <p>
-
+        <p class="bioParagraph">
+            J U I C E B O X is, however, more than just an accumulation of musical prowess; they're natural-born entertainers, and the
+            gimmicks they pull on stage could even entertain a misplaced flock of deaf children.  Good luck catching Zesty
+            ever wearing conventional clothing; from tied-dyed smocks to checkerboard overalls, this dude's got the trippiest
+            wardrobe in the North East.  By the way, if you find yourself in the crowd when they perform 'Capri Sun', you can
+            expect some free juice coming your way.  What other bands do you know that give more than music to their audience?
+            Their ecstatic motions and magical potions will have you feelin' like a warlock at the Brooklyn Zoo.  These 
+            fuckers are as real as your favorite Saturday morning cartoon;  seemingly non-existant, but pulling you out of bed
+            every morning to get your fix.  Grab the cookie crisp, gawker.
         </p>
 
+        <p class="bioParagraph">
+            In the course of six months, J U I C E B O X went from a scheme to a reality.  Despite being less than a year
+            old, J U I C E B O X accelerated to the top, competing in and winning the University of Vermont's Battle of the
+            Bands.  With their victory, they yielded an opportunity that any aspiring hip-hop artist would kill for; playing at 
+            UVM's annual Spring Fest as an opener for Beast Coast, the rap collection featuring Joey Bada$$, Flatbush Zombies, The
+            Underachievers, and several other significant rappers. Some bands would consider this the height of their career,
+            but for a band with this much potential, this is just the beginning.
+        </p>
     </div>
 </div>
 
