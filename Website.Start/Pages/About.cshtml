@@ -8,7 +8,9 @@
 <style>
     body {
         padding: 2.2em;
-        background-image: url(../images/clas.PNG);
+        background-image: url(../images/coloredBackground.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center center;
     }
     .title {
@@ -20,12 +22,12 @@
 
     .titleBox{
         background-repeat: repeat;
-        height: 2295px;
+        height: auto;
         width: 100%;
         margin-top: 45px;
-        background-image: radial-gradient(grey, white);
-        background-color: #e1dada;
+        background-image: radial-gradient(yellow, red);
         border-radius: 25px;
+        padding-bottom: 1em;
     }
 
     .profileMain {
@@ -34,7 +36,6 @@
         margin-right: auto;
         width: 72%;
         padding: 12px;
-        border: 2px groove black;
     }
 
     .profileMainFig {
@@ -44,12 +45,11 @@
     .bioBox {
         margin-left: 2em;
         margin-right: 2em;
-        padding-top: .5em;
+        padding-top: 1.5em;
         padding-bottom: .5em;
         padding-left: 1em;
         padding-right: 1em;
-        background-image: radial-gradient(grey, white);
-        background-color: #bab8b8;
+        background-image: radial-gradient(red, orange);
         text-align: left;
         border-radius: 25px;
     }
@@ -58,6 +58,15 @@
         color: black;
         font-size: 18px;
         text-wrap: avoid;
+        background-color: white;
+        margin: 0;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        border-radius: 3px;
+        text-indent: 30px;
+        
     }
 
     .profileOne{
@@ -70,6 +79,11 @@
         padding: 0.3em;
     }
 
+    hr{
+        width: 93%;
+        border-color: black;
+    }
+
 </style>
 
 <body>
@@ -80,7 +94,11 @@
         </figure>
 
 
-        <h3 class="model" style="text-align: center; color: grey;">@Model.Message</h3>
+        <h3 class="model" style="text-align: center; font-size: 40px; font-family: LilyUPC">@Model.Message</h3>
+
+        <hr />
+        <hr />
+
         <div class="bioBox">
             <p class="bioParagraph">
                 Snatched up from the crypts of Burly, J U I C E B O X got its start from a spree of
@@ -112,7 +130,7 @@
                 </figure>
             </div>
             <p class="bioParagraph">
-                What makes this band so memorable, you may ask?  Their concept in itself was appealing; a jazz-based
+                What makes this band so memorable, you may ask?  Their concept in itself is appealing; a jazz-based
                 instrumental section (with hints of rock influence) that set the scene for hard-hitting, yet soulful,
                 bars.  In a haypile of punk-inspired indie lovers that dominate the local music scene, J U I C E B O X
                 is one of the few needles.  Whether you learn to love them or hate them, they are objectively a unique breed
@@ -134,7 +152,7 @@
                 expect some free juice coming your way.  What other bands do you know that give more than music to their audience?
                 Their ecstatic motions and magical potions will have you feelin' like a warlock at the Brooklyn Zoo.  These 
                 fuckers are as real as your favorite Saturday morning cartoon;  seemingly non-existant, but pulling you out of bed
-                every morning to get your fix.  Grab the cookie crisp, gawker.
+                every morning to get your fix.  Grab the cornflakes, gawker.
             </p>
 
             <p class="bioParagraph">
