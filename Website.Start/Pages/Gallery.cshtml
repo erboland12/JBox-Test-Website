@@ -12,10 +12,63 @@
         background-image: url(../images/yellow-red.jpg);
         background-size: cover;
     }
+    .barrier{        
+        background-color: rgba(0,0,0,0.7);
+        padding-top: .1em;
+        margin-top: 5em;
+    }
+    .main {
+        height: auto;
+        width: auto;
+        margin: auto;
+        background-image: radial-gradient(yellow, red);
+        border-radius: 15px;
+        padding-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        opacity: 0.9;
+    }
+    .mainHeader{
+        text-align: center;
+        margin-bottom: -0.2em;
+    }
+    .rows{
+        table-layout: auto;
+    }
+    .photoTable{
+        table-layout: auto;
+    }
+    .pic {
+        height: 600px;
+        width: 550px;
+        max-width: 100%;
+        max-height: 100vh;
+        left: 0;
+        right: 0;
+        padding: 3em;
+       
+    }
+
 
 </style>
 
 <body>
+    <div class="barrier">
+        <div class="main">
+            <h1 class="mainHeader">@Model.Message</h1>      
+        </div>
 
-
+        <div class="gallery">
+            <table align="center" class="photoTable">
+                <tr class="rows">
+                    <th>
+                        <img src="~/images/juicemain.jpg" class="pic" />
+                    </th>
+                    <th>
+                        <img src="~/images/juiceone.jpg" class="pic" />
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
