@@ -6,8 +6,7 @@
 
 <!DOCTYPE html>
 
-<style>
-    
+<style> 
     body{
         background-image: url(../images/yellow-red.jpg);
         background-size: cover;
@@ -49,6 +48,21 @@
        
     }
 
+    button{
+        margin: auto;
+        display: block;    
+        margin-bottom: .5em;
+    }
+    .description{
+        margin: auto;
+        color: white;
+        background-color: black;
+        text-align: center;
+        opacity: 0.7;
+        left: 0;
+        right: 0;
+    }
+
 
 </style>
 
@@ -63,12 +77,39 @@
                 <tr class="rows">
                     <th>
                         <img src="~/images/juicemain.jpg" class="pic" />
+                        <div class="description">
+                            <p id="picture"></p>
+                            <p id="hideDescription"></p>
+                        </div>
+                        <button id="change" align="center" type="button" onclick="Description1()">
+                            Description
+                        </button>
                     </th>
                     <th>
                         <img src="~/images/juiceone.jpg" class="pic" />
+                        <button align="center" type="button">
+                            Description
+                        </button>
                     </th>
                 </tr>
             </table>
         </div>
     </div>
+
+    <script>
+        function Description1() {     
+            document.getElementById("picture").innerHTML =
+                "An iconic capture of the historic Juice Box.  These " +
+                "guys are sick";
+            document.getElementById('change').innerText = "Hide";
+            document.getElementById('change').onclick = function () { Close() };
+        }
+
+        function Close() {
+            document.getElementById("picture").innerHTML = "";
+            document.getElementById("change").innerText = "Description";
+            document.getElementById("change").onclick = function () { Description1() };
+
+        }
+    </script>
 </body>
