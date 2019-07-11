@@ -14,4 +14,11 @@
     <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\juiceBand.jpg" />
+    <None Include="wwwroot\images\juiceJam.jpg" />
+    <None Include="wwwroot\images\juicemain.jpg" />
+    <None Include="wwwroot\images\juiceone.jpg" />
+  </ItemGroup>
+
 </Project>
